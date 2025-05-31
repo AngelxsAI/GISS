@@ -1,0 +1,120 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a148c;
+    text-align: center;
+}
+
+header {
+    background-color: #8e24aa;
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(142, 36, 170, 0.4);
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.bts-section, .members-section, .albums-section, .songs-section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(142, 36, 170, 0.2);
+}
+
+.member {
+    margin: 20px 0;
+    background-color: #f8bbd0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(142, 36, 170, 0.3);
+}
+
+h2 {
+    color: #8e24aa;
+    font-size: 2em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f1e6ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    box-shadow: 0 2px 5px rgba(123, 31, 162, 0.2);
+}
+
+footer {
+    background-color: #7b1fa2;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+.quiz-section {
+    background-color: #e0d4f7;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.quiz-section h2 {
+    color: #6b3fa0;
+    margin-bottom: 20px;
+}
+
+.quiz-section label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4a2c68;
+}
+
+.quiz-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5aef1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.quiz-section button {
+    background-color: #a87dc4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.quiz-section button:hover {
+    background-color: #8d67b3;
+}

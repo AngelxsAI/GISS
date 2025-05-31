@@ -1,0 +1,286 @@
+/* Estilos Generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #6a1b9a;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #6a1b9a;
+}
+
+ul.miembros {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+ul.miembros li {
+    margin: 15px 0;
+}
+
+/* Estilos de las secciones */
+.seccion {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.frases {
+    background: #e5e0ff;
+}
+
+.imagenes {
+    background: #fff1f9;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Formato de login */
+.login {
+    background-color: #f3e5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+#login-favorito {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 300px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff4b5c, #ff65a3);
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff65a3, #ff4b5c);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6a1b9a;
+    color: white;
+}
+
+.firma {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Medios de pantalla para dispositivos pequeños */
+@media screen and (max-width: 600px) {
+    h1, .subtitulo, h2, .miembros li, h3 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+}
+
+
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f3e5f5, #ede7f6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a148c;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #ba68c8;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ab47bc;
+    box-shadow: 0 4px 12px rgba(186, 104, 200, 0.4);
+}
+
+header h1 {
+    font-size: 2.2em;
+}
+
+.subtitulo {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #f3e5f5;
+}
+
+.seccion {
+    padding: 30px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(123, 31, 162, 0.2);
+}
+
+.seccion h2 {
+    color: #8e24aa;
+    margin-bottom: 15px;
+}
+
+.miembros li {
+    background-color: #fce4ec;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #ab47bc;
+    border-radius: 8px;
+}
+
+.cancion {
+    background-color: #f3e5f5;
+    border: 2px dashed #ce93d8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cancion h3 {
+    margin-top: 0;
+    color: #6a1b9a;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para el login de miembro favorito */
+.login {
+    background-color: #f1e6ff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(123, 31, 162, 0.3);
+}
+
+#login-favorito {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f3e5f5;
+    border: 2px solid #ba68c8;
+    box-shadow: 0 4px 8px rgba(186, 104, 200, 0.4);
+}
+
+#login-favorito input {
+    padding: 12px;
+    margin: 8px 0;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ce93d8;
+    background-color: #fff0ff;
+}
+
+#login-favorito button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+#login-favorito button:hover {
+    background-color: #7b1fa2;
+}
+
+#login-favorito-error {
+    font-weight: bold;
+    color: #d500f9;
+    margin-top: 10px;
+}
+
+/* Títulos */
+.login h2 {
+    color: #8e24aa;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.login p {
+    font-size: 1.2em;
+    color: #6a1b9a;
+}
+
+/* Estilos para los controles de audio */
+audio {
+    background-color: #f3e5f5;
+    border: 2px solid #ab47bc;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(137, 73, 158, 0.2);
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #9c27b0;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>December</title>
+    <link rel="stylesheet" href="css.css">
+    <css></css>
+</head>
+<body>
+    <h1>Bienvenida pequeña</h1>
+    <h2>¿Quieres ver algo?</h2>
+ <details><summary>descuidos</summary><strong> web fue hecha sencillamente con lo mas basico de html y no se metio mucho esfuerzo,me costo un poco,pero trate que todo quede ordenado,aunque el css si lo hare con chatgpt y yo,con un promt muy detallado por que siento que es demasiado aprenderme las cosas de css D:</strong></details>
+<h1>¿ya que ya salimos de ese tema,quieres ver nuestras fechas mas importantes?</h1>
+<h2><strong>Fechas Especiales</strong></h2>
+<ul><strong>08 de Diciembre</strong></ul>
+<details><summary>¿Por que es importante el ocho de diciembre?</summary><strong>El ocho de diciembre es el dia que nos conocimos una de las primeras fechas mas especiales,por que sin ese dia no hubiera existido tantos lindos momentos contigo mi pequeña </strong></details>
+<ul><strong>19 de diciembre</strong></ul>
+<details><summary>¿por que es importante el 19 de diciembre?</summary><strong>El 19 de diciembre fue el dia que nos hicimos pareja,aun recuerdo ese dia,fue un lindo muy lindo,desde ese dia empezo toda la confianza,todo el cariño,todo el amor,todos los celos,los momentos hormonales,en es dia nacieron los bebes ><, honestamente,sin esa fecha, mi vida fuera muy distinta,eres una de las principales razones para seguir en este mundo,es mas,hasta por ti empeze a entrenar brazos,por ti me esfuerzo mas en la escuela,Gracias :) </strong></details>
+
+<h1>Perdon que sea una web tan sencilla.</h1>
+
+<h2>¿Quieres entrar al rincón secreto del pingüino? 🐧</h2>
+
+<div id="login-section">
+  <label for="username">Usuario:</label>
+  <input type="text" id="username" placeholder="Ingresa tu nombre"><br><br>
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" placeholder="Ingresa tu contraseña"><br><br>
+
+  <button onclick="checkLogin()">Entrar</button>
+  <p id="login-error" style="color:red;"></p>
+</div>
+
+<script>
+  function checkLogin() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    const errorMsg = document.getElementById("login-error");
+
+    // Cambia esto por el usuario y contraseña que quieras
+    const correctUser = "gissi";
+    const correctPass = "pinguinos";
+
+    if (user === correctUser && pass === correctPass) {
+      window.location.href = "pinguino.html";
+    } else {
+      errorMsg.textContent = "Usuario o contraseña incorrectos 🥲";
+    }
+  }
+</script>
+
+
+</body>
+</html>

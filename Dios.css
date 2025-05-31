@@ -1,0 +1,172 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 3s ease-in;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #264653;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.intro p, .versiculos p, .matrimonio p, .halagos p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.versiculos p, .matrimonio p, .halagos p {
+    background-color: #e9c46a;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.verse p {
+    font-style: italic;
+}
+
+.cancion p {
+    font-style: italic;
+    color: #e76f51;
+    text-align: center;
+}
+
+.halagos {
+    background-color: #264653;
+    color: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.halagos p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta .btn {
+    background-color: #e76f51;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #2a9d8f;
+}
+
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Audio Player */
+.audio-player {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audio-player .btn-play {
+    background-color: #e76f51;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.audio-player .btn-play:hover {
+    background-color: #264653;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInText {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .intro p, .versiculos p, .matrimonio p, .halagos p {
+        font-size: 1em;
+    }
+}

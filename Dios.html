@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Jumi Forever en Dios</title>
+    <link rel="stylesheet" href="Dios.css">
+</head>
+<body>
+    <header>
+        <h1>Grupo Jumi Forever en Dios</h1>
+        <p>Unidos en fe, esperanza y amor a través de Jesucristo</p>
+    </header>
+
+    <section class="intro">
+        <h2>La Vida con Jesús</h2>
+        <p class="fadeInText">Seguir a Jesús es un camino de transformación, donde nuestro corazón y mente son renovados día a día por su amor y su gracia. En la vida con Él, encontramos paz, propósito y amor eterno. Él es la luz que guía nuestros pasos y la roca que nos da firmeza en tiempos de tormenta.</p>
+    </section>
+
+    <section class="versiculos">
+        <h2>Versículos que Inspiran</h2>
+        <div class="verse">
+            <p><strong>Juan 14:6</strong> – "Yo soy el camino, la verdad y la vida; nadie viene al Padre, sino por mí."</p>
+            <p><strong>Filipenses 4:13</strong> – "Todo lo puedo en Cristo que me fortalece."</p>
+            <p><strong>Mateo 19:6</strong> – "Así que no son ya dos, sino una sola carne. Por tanto, lo que Dios juntó, no lo separe el hombre."</p>
+        </div>
+    </section>
+
+    <section class="matrimonio">
+        <h2>El Matrimonio en Cristo</h2>
+        <p>El matrimonio es un reflejo del amor eterno de Cristo por su iglesia. Es un compromiso sagrado, una alianza que se basa en la confianza, el respeto y el amor incondicional.</p>
+        <p><strong>Efesios 5:25</strong> – "Maridos, amad a vuestras mujeres, así como Cristo amó a la iglesia y se entregó a sí mismo por ella."</p>
+    </section>
+
+    <section class="cancion">
+        <h2>¿Es Él digno?</h2>
+        <p><em>"Is He worthy, is He worthy of all blessing and honor and glory? Is He worthy of this? He is."</em></p>
+        <p>Esta canción nos recuerda que Jesús es digno de todo honor, alabanza y gloria, porque Él vino a redimirnos, a salvarnos y a ofrecernos la vida eterna. Es un llamado a la adoración.</p>
+
+        <!-- Botón para escuchar la canción -->
+        <div class="audio-player">
+            <button class="btn-play" onclick="toggleAudio()">Escuchar Is He Worthy?</button>
+            <audio id="audio" src="ruta-a-tu-cancion.mp3" preload="auto" hidden></audio>
+        </div>
+    </section>
+
+    <section class="halagos">
+        <h2>¡Glorifiquemos Su Nombre!</h2>
+        <p>Él es el Alfa y la Omega, el principio y el fin. El Creador del universo, el que nos da fuerza, esperanza y alegría. Con Él, nada es imposible. ¡Bendito sea el Nombre de Jesús, que nos redimió con Su sangre preciosa!</p>
+        <p>La grandeza de Su amor no tiene comparación. Él es nuestra fortaleza, nuestra paz, nuestro consuelo. ¡Adorémosle con todo nuestro corazón y nuestra vida! ¡Aleluya!</p>
+    </section>
+
+    <section class="cta">
+        <a href="/JUMI/jumi.html" class="btn">Visita nuestra próxima página</a>
+    </section>
+
+
+    <section class="cta">
+        <a href="gissi.html" class="btn">Visita nuestra segunda página</a>
+    </section>
+
+    <footer>
+        <p>Grupo Jumi Forever en Dios. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para reproducir y pausar la canción
+        function toggleAudio() {
+            var audio = document.getElementById("audio");
+            var button = document.querySelector(".btn-play");
+            
+            if (audio.paused) {
+                audio.play();
+                button.textContent = "Pausar Canción"; // Cambia el texto al comenzar la canción
+            } else {
+                audio.pause();
+                button.textContent = "Escuchar Is He Worthy?"; // Cambia el texto al pausar la canción
+            }
+        }
+    </script>
+</body>
+</html>

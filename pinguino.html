@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS 💜 ARMY</title>
+    <link rel="stylesheet" href="pinguino.css">
+</head>
+<body>
+
+    <header>
+        <h1>💜 Una web dedicada a BTS hecha por Pinguino y ChatGPT 💜</h1>
+        <p class="subtitulo">Porque el amor por BTS se siente en el corazón y también en el código 🎶</p>
+    </header>
+
+    <section class="seccion">
+        <h2>🎤 Integrantes de BTS</h2>
+        <ul class="miembros">
+            <li>RM (Namjoon) - 💜 El líder, sabio como pocos</li>
+            <li>Jin (Seokjin) - 🐹 Worldwide Handsome y con una voz hermosa</li>
+            <li>SUGA (Yoongi) - 🐱 El genio de la producción</li>
+            <li>J-Hope (Hoseok) - 🌞 Nuestro rayo de sol</li>
+            <li>Jimin - 🐥 Dulzura y ternura en persona</li>
+            <li>V (Taehyung) - 🐯 Carisma y voz profunda</li>
+            <li>Jungkook - 🐰 Golden Maknae, todo lo puede</li>
+        </ul>
+    </section>
+
+    <section class="seccion frases">
+        <h2>💬 Frases hermosas de canciones</h2>
+
+        <div class="cancion">
+            <h3>Magic Shop</h3>
+            <p>"So show me (I'll show you)..."</p>
+            <audio controls>
+                <source src="Magicshop.mp3" type="audio/mp3">
+                Tu navegador no soporta audio :(
+            </audio>
+        </div>
+
+        <div class="cancion">
+            <h3>Spring Day</h3>
+            <p>"I miss you... Saying this makes me miss you even more..."</p>
+            <audio controls>
+                <source src="BTS.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="cancion">
+            <h3>Epiphany</h3>
+            <p>"I'm the one I should love in this world..."</p>
+            <audio controls>
+                <source src="BTS2.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+
+    <section class="seccion imagenes">
+        <h2>📸 Imágenes para el alma</h2>
+        <p>(Aquí puedes agregar tus imágenes favoritas de BTS, ARMY Bombs, etc.)</p>
+        <div class="galeria">
+            <!-- Aquí puedes agregar imágenes como esta -->
+            <!-- <img src="img/tae.jpg" alt="Taehyung"> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>💜 Hecho con mucho amor por Pinguino y ChatGPT para la persona más especial 💜</p>
+        <p class="firma">ARMY por siempre 💜</p>
+    </footer>
+
+    <section class="seccion login">
+        <h2>🖤 ¡Ingresa el nombre de tu integrante favorito de BTS y su edad! 💜</h2>
+        <p>Solo para los más grandes fans de BTS 😎💜</p>
+        
+        <div id="login-favorito">
+            <label for="favorite-name">Nombre del favorito:</label>
+            <input type="text" id="favorite-name" placeholder="Jungkook..."><br><br>
+    
+            <label for="favorite-age">Edad de tu favorito:</label>
+            <input type="password" id="favorite-age" placeholder="Edad de Jungkook..."><br><br>
+    
+            <button onclick="checkFavorite()">Acceder</button>
+            <p id="login-favorito-error" style="color:red;"></p>
+        </div>
+    </section>
+    
+    <script>
+        function checkFavorite() {
+            const name = document.getElementById("favorite-name").value;
+            const age = document.getElementById("favorite-age").value;
+            const errorMsg = document.getElementById("login-favorito-error");
+    
+            // Cambia el nombre y la edad de acuerdo al favorito que quieras
+            const correctName = "Jungkook";
+            const correctAge = "26";  // Ajusta la edad según la actual de Jungkook
+    
+            if (name === correctName && age === correctAge) {
+                // Redirige a BTS.html cuando el login es correcto
+                window.location.href = "BTS.html";  // Cambia a la ruta de tu archivo HTML
+            } else {
+                errorMsg.textContent = "¡Oops! Nombre o edad incorrectos. ¿Estás seguro de que eres ARMY? 🥺";
+            }
+        }
+    </script>
+    
+</body>
+</html>

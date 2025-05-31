@@ -1,0 +1,92 @@
+/* General */
+body {
+    background-color: #f7f0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3e1f47;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #8e44ad;
+    text-shadow: 1px 1px 2px #d8b4ff;
+}
+
+/* Fechas y secciones especiales */
+strong {
+    color: #a66bbe;
+    font-weight: bold;
+    background-color: #f3e5f5;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* <details> y <summary> */
+details {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #ede7f6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(142, 68, 173, 0.2);
+    transition: 0.3s;
+}
+
+summary {
+    font-weight: bold;
+    color: #6a1b9a;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+details[open] {
+    background-color: #e1bee7;
+}
+
+/* Login section */
+#login-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ba68c8;
+    background-color: #f3e5f5;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+#login-section input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 90%;
+    border: 1px solid #ce93d8;
+    border-radius: 10px;
+    background-color: #fff0ff;
+}
+
+#login-section button {
+    background-color: #9c27b0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-section button:hover {
+    background-color: #7b1fa2;
+}
+
+/* Error message */
+#login-error {
+    font-weight: bold;
+    color: #d500f9;
+    margin-top: 10px;
+}
+
+/* Otros elementos */
+ul {
+    list-style-type: "💜 ";
+    margin-left: 20px;
+}
